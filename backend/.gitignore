@@ -1,0 +1,9 @@
+# Thư viện
+node_modules
+
+# File môi trường (Tuyệt đối không nộp)
+.env
+
+# File rác
+npm-debug.log*
+yarn-debug.log*

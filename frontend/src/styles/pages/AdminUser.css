@@ -1,0 +1,44 @@
+.admin-user-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.admin-user-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.admin-user-table {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.admin-user-table thead {
+  background: #f5f7fa;
+}
+
+.admin-user-table th {
+  font-weight: 600;
+  color: #444;
+}
+
+.admin-user-table td {
+  vertical-align: middle;
+}
+
+.admin-user-actions button {
+  margin: 2px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+}
+
+.admin-pagination {
+  margin-top: 15px;
+}

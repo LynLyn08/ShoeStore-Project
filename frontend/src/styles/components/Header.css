@@ -1,0 +1,210 @@
+.admin-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #111827;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.logo {
+  color: #fff;
+  margin: 0;
+}
+
+/* Avatar + username */
+.dropdown-wrapper {
+  position: relative;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.user-info:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+.username {
+  font-size: 0.9rem;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  list-style: none;
+  padding: 6px 0;
+  margin: 0;
+  width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: all 0.2s ease-in-out;
+  font-size: 0.88rem;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  padding: 8px 14px;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.2s, color 0.2s, padding-left 0.2s;
+}
+
+.dropdown-menu li:hover {
+  background: #f3f4f6;
+  color: #111827;
+  padding-left: 18px;
+}
+
+/* === Modal backdrop (custom) === */
+.custom-modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* === Modal content (custom) === */
+.custom-modal-content {
+  background: #fff;
+  padding: 100px 120px;
+  border-radius: 20px;
+  width: 600px;
+  max-width: 95%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  animation: fadeInScale 0.25s ease;
+  text-align: center;
+}
+
+.custom-modal-content h4 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+.custom-modal-content input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.custom-modal-content input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+  outline: none;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-actions .btn {
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  border: none;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #d1d5db;
+  transform: scale(1.05);
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: red;
+}
+.form-group {
+  margin-bottom: 12px;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.profile-info {
+  text-align: left;
+  margin: 16px 0;
+  font-size: 0.95rem;
+}
+
+.avatar-large {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Animation modal */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

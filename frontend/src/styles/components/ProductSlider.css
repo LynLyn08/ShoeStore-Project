@@ -1,0 +1,28 @@
+.product-card {
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  color: white;
+  text-align: center;
+  max-width: 350px; /* tránh kéo giãn full width */
+  margin: 0 auto;
+}
+
+.product-card img {
+    width: 100%;
+  height: 290px !important;
+  object-fit: cover;
+  display: block; /* tránh ảnh inline làm lệch */
+}
+
+.product-card .btn {
+  margin-top: 10px;
+}
+
+/* Khi ít sản phẩm thì hiển thị grid thay vì slider */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+}

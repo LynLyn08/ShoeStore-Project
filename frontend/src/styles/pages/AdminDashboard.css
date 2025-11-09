@@ -1,0 +1,62 @@
+/* src/styles/pages/AdminDashboard.css */
+
+/* Thiết lập nền chung cho trang */
+.admin-dashboard {
+    background-color: #f8f9fa; /* Màu nền xám rất nhạt */
+    min-height: 100vh;
+}
+
+/* Tùy chỉnh Thẻ (Card) thống kê chung */
+.admin-dashboard .stat-card {
+    transition: all 0.3s ease;
+    border: none; /* Bỏ viền mặc định */
+    border-radius: 0.5rem; /* Bo tròn góc */
+}
+
+.admin-dashboard .stat-card:hover {
+    transform: translateY(-5px); /* Hiệu ứng nhấc lên khi hover */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    cursor: pointer;
+}
+
+/* Tùy chỉnh Icon bên trong Thẻ */
+.admin-dashboard .stat-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Tùy chỉnh màu nền cho các icon */
+.admin-dashboard .stat-icon.bg-primary { background-color: #0d6efd !important; }
+.admin-dashboard .stat-icon.bg-success { background-color: #198754 !important; }
+.admin-dashboard .stat-icon.bg-info { background-color: #0dcaf0 !important; }
+.admin-dashboard .stat-icon.bg-warning { background-color: #ffc107 !important; }
+
+
+/* Tùy chỉnh tiêu đề của Card (cho biểu đồ, bảng) */
+.admin-dashboard .card-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6 !important; /* Thêm viền dưới cho tiêu đề */
+}
+
+/* Tùy chỉnh Bảng (Table) */
+.admin-dashboard .table {
+    vertical-align: middle; /* Căn giữa nội dung bảng theo chiều dọc */
+}
+
+/* Tăng padding cho các ô trong bảng để thoáng hơn */
+.admin-dashboard .table td,
+.admin-dashboard .table th {
+    padding: 1rem;
+}
+
+/* CSS cho hình ảnh sản phẩm trong bảng Top Products */
+.admin-dashboard .table img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}

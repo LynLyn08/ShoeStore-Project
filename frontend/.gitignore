@@ -1,0 +1,13 @@
+# Thư viện
+node_modules
+
+# File môi trường
+.env
+
+# Thư mục build
+build
+dist
+
+# File rác
+npm-debug.log*
+yarn-debug.log*

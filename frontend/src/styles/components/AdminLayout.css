@@ -1,0 +1,41 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f8f8; /* nền tối đồng bộ */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main */
+.admin-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px; /* bằng chiều rộng sidebar */
+  transition: margin-left 0.3s ease;
+}
+
+/* Nội dung */
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  background: #fafafb;
+  color: #fff;
+  overflow-y: auto;
+}
+
+/* Logout button style (có thể dùng trong modal hoặc trang profile) */
+.btn-logout {
+  background: #5a5aff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background: #4338ca;
+}

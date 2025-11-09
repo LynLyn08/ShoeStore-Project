@@ -1,0 +1,78 @@
+.sidebar {
+  background: linear-gradient(180deg, #1f2937, #111827);
+  color: #e5e7eb;
+  width: 250px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Header */
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #5a5aff;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.sidebar-header h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.sidebar-header p {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin: 5px 0 0;
+}
+
+/* Menu */
+.sidebar-menu {
+  flex: 1;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 12px;
+}
+
+.sidebar-menu a {
+  display: block;
+  padding: 12px 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #d1d5db;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-menu a:hover {
+  background: #374151;
+  color: #fff;
+}
+
+.sidebar-menu a.active {
+  background: #5a5aff;
+  color: #fff;
+  font-weight: bold;
+}
